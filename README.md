@@ -33,9 +33,15 @@ To run the demo, follow these steps:
 
 The `index.js` script generates an array of jobs (simulated computational tasks) and distributes them among multiple worker threads. Each worker thread, defined in `worker.js`, receives a chunk of jobs, performs the computation, and signals completion back to the main thread.
 
-## License
+## Comparison and Benefits of Using Web Workers
 
-This project is licensed under the [MIT License](LICENSE).
+Using web workers offers several benefits:
+
+- **Improved Performance**: By offloading intensive tasks to separate threads, the main thread remains responsive, leading to a smoother user experience.
+  
+- **Utilization of Multiple CPU Cores**: Web workers allow leveraging multiple CPU cores efficiently, speeding up processing times for parallelizable tasks.
+  
+- **Non-Blocking Operations**: As web workers operate independently, they do not block the main thread. This prevents long-running tasks from causing delays or freezes in the user interface.
 
 ## Additional Resources
 
